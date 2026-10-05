@@ -1,6 +1,52 @@
 /* =========================================================
-   GetFitt24x7 — Scripts
+   EliteFit24x7 — Scripts
    ========================================================= */
+
+/* ---------- Backend API ---------- */
+// Change this one line when the backend is deployed.
+const API_BASE = 'http://127.0.0.1:8000/api';
+
+const FIELD_LABELS = {
+  full_name: 'Name', name: 'Name', phone: 'Phone', email: 'Email',
+  preferred_time: 'Preferred time', primary_goal: 'Goal', message: 'Message',
+};
+
+function formatErrors(body) {
+  const lines = Object.entries(body).map(([field, msgs]) => {
+    const text = Array.isArray(msgs) ? msgs.join(' ') : String(msgs);
+    return `${FIELD_LABELS[field] || field}: ${text}`;
+  });
+  return lines.join(' • ') || 'Please check your details and try again.';
+}
+
+async function postJSON(path, data) {
+  let res;
+  try {
+    res = await fetch(`${API_BASE}${path}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+  } catch {
+    throw new Error("Can't reach the server. Please check your connection and try again.");
+  }
+  const body = await res.json().catch(() => ({}));
+  if (res.ok) return body;
+  if (res.status === 429) throw new Error('Too many attempts. Please wait a minute and try again.');
+  if (res.status === 400) throw new Error(formatErrors(body));
+  throw new Error('Something went wrong on our side. Please try again later.');
+}
+
+function setBusy(btn, busy, label) {
+  if (busy) {
+    btn.dataset.html = btn.innerHTML;
+    btn.disabled = true;
+    btn.textContent = label;
+  } else {
+    btn.disabled = false;
+    btn.innerHTML = btn.dataset.html;
+  }
+}   
 
 document.addEventListener('DOMContentLoaded', () => {
 

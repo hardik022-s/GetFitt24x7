@@ -32,13 +32,13 @@ def notify_trial(booking):
     # 2. Send the visitor their pass, only if they gave an email
     if booking.email:
         _send(
-            "Your GetFitt24x7 free trial pass",
+            "Your EliteFit24x7 free trial pass",
             (
                 f"Hi {booking.full_name},\n\n"
                 f"Your free 1-day pass code is: {booking.pass_code}\n"
                 f"Preferred time: {booking.preferred_time}\n\n"
                 "Show this code at the front desk. See you soon!\n"
-                "GetFitt24x7"
+                "EliteFit24x7"
             ),
             booking.email,
         )

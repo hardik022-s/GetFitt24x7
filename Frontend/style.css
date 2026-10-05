@@ -1,5 +1,5 @@
 /* =========================================================
-   GetFitt24x7 — Stylesheet
+   EliteFit24x7 — Stylesheet
    ========================================================= */
 
 /* ---------- Variables ---------- */
@@ -1707,3 +1707,10 @@ a.logo:hover .logo-dot { transform: scale(1.25); }
   }
   html { scroll-behavior: auto; }
 }
+.form-error {
+  color: #ff6b6b;
+  font-size: 0.875rem;
+  margin: 0;
+}
+.form-error[hidden] { display: none; }
+.btn:disabled { opacity: 0.6; cursor: not-allowed; } 
