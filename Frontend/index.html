@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GetFitt24x7 | Reach Your Best Shape for Life</title>
+  <meta name="description" content="Work out 24/7 with certified trainers, elite equipment, and flexible memberships at GetFitt24x7.">
+  <meta property="og:title" content="GetFitt24x7 | Reach Your Best Shape for Life">
+  <meta property="og:description" content="Work out 24/7 with certified trainers, elite equipment, and flexible memberships at GetFitt24x7.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ ICONS (reused with <use href="#i-name">) ============ -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+    <symbol id="i-twitter" viewBox="0 0 24 24"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-dumbbell" viewBox="0 0 24 24"><path d="m6.5 6.5 11 11"/><path d="m21 21-1-1"/><path d="m3 3 1 1"/><path d="m18 22 4-4"/><path d="m2 6 4-4"/><path d="m3 10 7-7"/><path d="m14 21 7-7"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="i-maximize" viewBox="0 0 24 24"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+    <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+  </svg>
+
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+
+      <a href="#home" class="logo" data-scroll="home">
+        <span class="logo-text">GetFitt24x7</span>
+        <span class="logo-dot"></span>
+      </a>
+
+      <nav class="nav-links">
+        <div class="nav-dropdown">
+          <button class="nav-link" data-scroll="home" data-spy="home">
+            <span>Home</span>
+            <svg class="icon chevron"><use href="#i-chevron-down"/></svg>
+            <span class="underline"></span>
+          </button>
+          <div class="dropdown-menu">
+            <button class="dropdown-item" data-scroll="free-trial">
+              <span>Book Free Trial</span>
+              <svg class="icon"><use href="#i-sparkles"/></svg>
+            </button>
+            <button class="dropdown-item" data-scroll="contact">
+              <span>Contact &amp; Location</span>
+            </button>
+          </div>
+        </div>
+
+        <a href="#about" class="nav-link" data-scroll="about" data-spy="about"><span>About</span><span class="underline"></span></a>
+        <a href="#trainers" class="nav-link" data-scroll="trainers" data-spy="trainers"><span>Trainers</span><span class="underline"></span></a>
+        <a href="#gallery" class="nav-link" data-scroll="gallery" data-spy="gallery"><span>Gallery</span><span class="underline"></span></a>
+        <a href="#membership" class="nav-link" data-scroll="membership" data-spy="membership"><span>Membership Plans</span><span class="underline"></span></a>
+        <a href="#map" class="nav-link" data-scroll="map" data-spy="map"><span>Map</span><span class="underline"></span></a>
+      </nav>
+
+      <div class="nav-cta">
+        <button class="btn btn-nav" data-scroll="free-trial">Book Free Trial</button>
+      </div>
+
+      <div class="nav-mobile-actions">
+        <button class="btn btn-nav-sm" data-scroll="free-trial">Free Trial</button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-links">
+        <div class="mobile-item">
+          <button class="mobile-link mobile-home-toggle" id="mobileHomeToggle" data-spy="home">
+            <span>Home</span>
+            <svg class="icon chevron"><use href="#i-chevron-down"/></svg>
+          </button>
+          <div class="mobile-sub" id="mobileSub">
+            <button data-scroll="home">Main Hero</button>
+            <button data-scroll="free-trial">Book Free Trial</button>
+            <button data-scroll="contact">Contact &amp; Location</button>
+          </div>
+        </div>
+        <div class="mobile-item stagger"><button class="mobile-link" data-scroll="about" data-spy="about">About</button></div>
+        <div class="mobile-item stagger"><button class="mobile-link" data-scroll="trainers" data-spy="trainers">Trainers</button></div>
+        <div class="mobile-item stagger"><button class="mobile-link" data-scroll="gallery" data-spy="gallery">Gallery</button></div>
+        <div class="mobile-item stagger"><button class="mobile-link" data-scroll="membership" data-spy="membership">Membership Plans</button></div>
+        <div class="mobile-item stagger"><button class="mobile-link" data-scroll="map" data-spy="map">Map</button></div>
+      </div>
+
+      <div class="mobile-bottom">
+        <button class="btn btn-block btn-mobile" data-scroll="free-trial">Book Free Trial</button>
+        <p class="mobile-info">+91 98765 43210 • Monday – Sunday: 24/7 Access (Staffed: 6:00 AM – 10:00 PM)</p>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+
+      <div class="container hero-stage">
+        <div class="hero-center">
+
+          <div class="hero-line">
+            <h1 class="hero-title">
+              <span class="word-wrap"><span class="word" style="--d:.15s">Reach</span></span>
+              <span class="word-wrap"><span class="word" style="--d:.25s">Your</span></span>
+              <span class="word-wrap"><span class="word" style="--d:.35s">Best</span></span>
+            </h1>
+          </div>
+
+          <div class="hero-image-wrap">
+            <div class="hero-image">
+              <div class="hero-image-glow"></div>
+              <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=900&q=85" alt="GetFitt24x7 athlete training">
+              <div class="hero-image-fade"></div>
+            </div>
+          </div>
+
+          <div class="hero-line">
+            <div class="hero-title" aria-hidden="true">
+              <span class="word-wrap"><span class="word" style="--d:.45s">Shape</span></span>
+              <span class="word-wrap"><span class="word" style="--d:.55s">for</span></span>
+              <span class="word-wrap"><span class="word" style="--d:.65s">Life</span></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Side social icons -->
+      <div class="hero-socials">
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg class="icon"><use href="#i-youtube"/></svg></a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+        <div class="hero-socials-line"></div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="container hero-bottom">
+        <div class="hero-clients">
+          <div class="avatars">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Happy client 1" style="z-index:10">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Happy client 2" style="z-index:9">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Happy client 3" style="z-index:8">
+          </div>
+          <div>
+            <div class="clients-count" id="clientCount">0.0k</div>
+            <div class="clients-label">Happy Clients</div>
+          </div>
+        </div>
+
+        <div class="hero-book">
+          <button class="btn btn-hero pulse" data-scroll="free-trial">Book a Class</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ FREE TRIAL ============ -->
+    <section class="section" id="free-trial">
+      <div class="trial-glow"></div>
+
+      <div class="container relative">
+        <div class="grid-12 align-center gap-lg">
+
+          <div class="col-5 stack reveal" data-reveal="left">
+            <div class="badge"><svg class="icon"><use href="#i-sparkles"/></svg><span>Complimentary 1-Day Pass</span></div>
+            <h2 class="section-title">Test Drive Your <br><span class="accent">Transformation.</span></h2>
+            <p class="text-body">Experience our cutting-edge training floor, Olympic lifting equipment, and meet our certified coaches with a completely free 1-day pass. No credit card required.</p>
+
+            <ul class="check-list">
+              <li><span class="check">✓</span>Full access to all strength &amp; cardio equipment</li>
+              <li><span class="check">✓</span>Complimentary InBody body composition scan</li>
+              <li><span class="check">✓</span>1-on-1 orientation with a certified trainer</li>
+              <li><span class="check">✓</span>Locker and private shower suite access</li>
+            </ul>
+          </div>
+
+          <div class="col-7 reveal" data-reveal="up" style="--d:.15s">
+            <div class="card form-card">
+
+              <form id="trialForm" class="form">
+                <div>
+                  <h3 class="card-title">Book Your Free Trial</h3>
+                  <p class="card-sub">Fill out your details to receive an instant VIP pass to GetFitt24x7.</p>
+                </div>
+
+                <div class="form-row">
+                  <div class="field">
+                    <label for="trialName">Full Name <span class="accent">*</span></label>
+                    <div class="input-icon">
+                      <svg class="icon"><use href="#i-user"/></svg>
+                      <input type="text" id="trialName" required placeholder="Your Name">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="trialPhone">Phone Number <span class="accent">*</span></label>
+                    <div class="input-icon">
+                      <svg class="icon"><use href="#i-phone"/></svg>
+                      <input type="tel" id="trialPhone" required placeholder="+91 98765 43210">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="trialEmail">Email Address</label>
+                  <div class="input-icon">
+                    <svg class="icon"><use href="#i-mail"/></svg>
+                    <input type="email" id="trialEmail" placeholder="yourname@gmail.com">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="field">
+                    <label for="trialTime">Preferred Time <span class="accent">*</span></label>
+                    <div class="input-icon">
+                      <svg class="icon"><use href="#i-clock"/></svg>
+                      <select id="trialTime">
+                        <option>Morning (6:00 AM - 9:00 AM)</option>
+                        <option>Midday (11:00 AM - 3:00 PM)</option>
+                        <option>Evening (5:00 PM - 9:00 PM)</option>
+                        <option>Late Night (9:00 PM - 1:00 AM)</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="trialGoal">Primary Goal <span class="accent">*</span></label>
+                    <div class="input-icon">
+                      <svg class="icon"><use href="#i-target"/></svg>
+                      <select id="trialGoal">
+                        <option>Weight Loss</option>
+                        <option selected>Muscle Gain</option>
+                        <option>General Fitness &amp; Conditioning</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-block btn-submit">Claim My Free Pass</button>
+              </form>
+
+              <div class="success" id="trialSuccess" hidden>
+                <div class="success-icon"><svg class="icon"><use href="#i-check-circle"/></svg></div>
+                <div class="pass-code">VIP PASS CODE: <strong id="passCode"></strong></div>
+                <h3 class="card-title">Free Trial Confirmed!</h3>
+                <p class="success-text">
+                  Thank you, <strong class="white" id="trialOutName"></strong>. Your complimentary VIP pass has been reserved for the
+                  <strong class="accent" id="trialOutTime"></strong> slot with a focus on <strong class="white" id="trialOutGoal"></strong>.
+                </p>
+                <div class="pass-info">
+                  <p class="pass-info-title">Entry Instructions:</p>
+                  <p>• Show your pass code at the front desk: <span class="pass-inline" id="passCode2"></span></p>
+                  <p>• Please bring sports footwear and a workout towel.</p>
+                </div>
+                <button class="btn btn-outline" id="trialReset">Book for a Friend</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="grid-12 align-center gap-xl">
+
+          <div class="col-6 relative reveal" data-reveal="left">
+            <div class="about-image">
+              <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1200&q=80" alt="Gym arena and equipment">
+              <div class="about-image-fade"></div>
+              <div class="about-badge">
+                <div class="about-badge-icon"><svg class="icon"><use href="#i-shield-check"/></svg></div>
+                <div>
+                  <h4>Premium Training Standards</h4>
+                  <p>IPF certified apparatus, calibrated Olympic weights, and sanitization cycles.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 stack reveal" data-reveal="right">
+            <div class="badge"><svg class="icon"><use href="#i-dumbbell"/></svg><span>About GetFitt24x7</span></div>
+            <h2 class="section-title">Where Relentless <br><span class="accent">Ambition Meets Science.</span></h2>
+            <p class="text-body">Founded on the belief that peak fitness shouldn’t be complicated by fad diets or chaotic workouts. At GetFitt24x7, we fuse biomechanically optimized training equipment with sports-science periodization.</p>
+            <p class="text-body muted">Whether you are an aspiring powerlifter chasing PRs, a working executive prioritizing cardiovascular longevity, or stepping into a weight room for the very first time, our coaching staff designs an individualized trajectory that guarantees measurable results.</p>
+
+            <div class="stats">
+              <div class="stat">
+                <div class="stat-num"><span class="counter" data-target="10">0</span><span class="accent">+</span></div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num"><span class="counter" data-target="2500">0</span><span class="accent">+</span></div>
+                <div class="stat-label">Active Members</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num"><span class="counter" data-target="18">0</span><span class="accent">+</span></div>
+                <div class="stat-label">Certified Trainers</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ TRAINERS ============ -->
+    <section class="section" id="trainers">
+      <div class="container">
+        <div class="section-head head-trainers">
+          <div class="badge"><svg class="icon"><use href="#i-award"/></svg><span>World-Class Mentorship</span></div>
+          <h2 class="section-title">Meet Our <span class="accent">Trainers.</span></h2>
+          <p class="section-lead">Certified exercise physiologists, strength specialists, and sports nutritionists dedicated to guiding your form, progression, and recovery.</p>
+        </div>
+
+        <div class="trainers-grid">
+
+          <article class="trainer-card reveal" data-reveal="up" style="--d:0s">
+            <div>
+              <div class="trainer-photo">
+                <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=800&q=80" alt="Alex Vance">
+                <div class="trainer-photo-fade"></div>
+                <div class="trainer-tag"><span>Powerlifting &amp; Hypertrophy</span></div>
+              </div>
+              <div class="trainer-info">
+                <h3>Alex Vance</h3>
+                <div class="trainer-role">Head Strength Coach</div>
+                <p>Former competitive powerlifter with 9+ years sculpting world-class athlete physics.</p>
+              </div>
+            </div>
+            <div class="trainer-socials">
+              <span>Connect</span>
+              <div>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Alex Vance Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Alex Vance YouTube"><svg class="icon"><use href="#i-youtube"/></svg></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Alex Vance Twitter"><svg class="icon"><use href="#i-twitter"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="trainer-card reveal" data-reveal="up" style="--d:.1s">
+            <div>
+              <div class="trainer-photo">
+                <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80" alt="Marcus Reyes">
+                <div class="trainer-photo-fade"></div>
+                <div class="trainer-tag"><span>Metabolic Conditioning &amp; Agility</span></div>
+              </div>
+              <div class="trainer-info">
+                <h3>Marcus Reyes</h3>
+                <div class="trainer-role">Functional &amp; HIIT Lead</div>
+                <p>Specializes in high-octane conditioning, athletic performance, and functional mobility.</p>
+              </div>
+            </div>
+            <div class="trainer-socials">
+              <span>Connect</span>
+              <div>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Marcus Reyes Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Marcus Reyes YouTube"><svg class="icon"><use href="#i-youtube"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="trainer-card reveal" data-reveal="up" style="--d:.2s">
+            <div>
+              <div class="trainer-photo">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Elena Rostova">
+                <div class="trainer-photo-fade"></div>
+                <div class="trainer-tag"><span>Biomechanics &amp; Clinical Diets</span></div>
+              </div>
+              <div class="trainer-info">
+                <h3>Elena Rostova</h3>
+                <div class="trainer-role">Nutrition &amp; Body Recomposition</div>
+                <p>Clinical nutritionist and Master Trainer helping clients strip body fat while building lean muscle.</p>
+              </div>
+            </div>
+            <div class="trainer-socials">
+              <span>Connect</span>
+              <div>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Elena Rostova Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Elena Rostova Twitter"><svg class="icon"><use href="#i-twitter"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="trainer-card reveal" data-reveal="up" style="--d:.3s">
+            <div>
+              <div class="trainer-photo">
+                <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=800&q=80" alt="David Kim">
+                <div class="trainer-photo-fade"></div>
+                <div class="trainer-tag"><span>Calisthenics &amp; Movement Flow</span></div>
+              </div>
+              <div class="trainer-info">
+                <h3>David Kim</h3>
+                <div class="trainer-role">Cardio &amp; Endurance Master</div>
+                <p>Passionate coach blending bodyweight mastery with relentless cardiovascular conditioning.</p>
+              </div>
+            </div>
+            <div class="trainer-socials">
+              <span>Connect</span>
+              <div>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="David Kim Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="David Kim YouTube"><svg class="icon"><use href="#i-youtube"/></svg></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="David Kim Twitter"><svg class="icon"><use href="#i-twitter"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div class="badge"><svg class="icon"><use href="#i-camera"/></svg><span>Visual Tour</span></div>
+          <h2 class="section-title">Gym <span class="accent">Gallery.</span></h2>
+          <p class="section-lead">A glimpse into our training floor, elite equipment, recovery amenities, and community energy.</p>
+        </div>
+
+        <!-- To add a photo: copy one <button class="gallery-item"> block and change the image, alt, category and title -->
+        <div class="gallery-grid" id="galleryGrid">
+          <button class="gallery-item reveal" data-reveal="up" style="--d:0s" data-category="Equipment" data-title="Olympic Free Weights Floor">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80" alt="Gym barbell and weight plates arena">
+            <span class="gallery-overlay"></span>
+            <span class="gallery-expand"><svg class="icon"><use href="#i-maximize"/></svg></span>
+            <span class="gallery-caption"><span class="pill">Equipment</span><span class="gallery-title">Olympic Free Weights Floor</span></span>
+          </button>
+
+          <button class="gallery-item reveal" data-reveal="up" style="--d:.1s" data-category="Strength" data-title="Heavy Barbell Deadlift Station">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80" alt="Member lifting barbell weights">
+            <span class="gallery-overlay"></span>
+            <span class="gallery-expand"><svg class="icon"><use href="#i-maximize"/></svg></span>
+            <span class="gallery-caption"><span class="pill">Strength</span><span class="gallery-title">Heavy Barbell Deadlift Station</span></span>
+          </button>
+
+          <button class="gallery-item reveal" data-reveal="up" style="--d:.2s" data-category="Equipment" data-title="Urethane Dumbbell Alley (2kg–50kg)">
+            <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1200&q=80" alt="High-end rack of gym dumbbells">
+            <span class="gallery-overlay"></span>
+            <span class="gallery-expand"><svg class="icon"><use href="#i-maximize"/></svg></span>
+            <span class="gallery-caption"><span class="pill">Equipment</span><span class="gallery-title">Urethane Dumbbell Alley (2kg–50kg)</span></span>
+          </button>
+
+          <button class="gallery-item reveal" data-reveal="up" style="--d:0s" data-category="Cardio" data-title="Cardio Endurance Suite">
+            <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=1200&q=80" alt="Treadmills and curved cardio runners">
+            <span class="gallery-overlay"></span>
+            <span class="gallery-expand"><svg class="icon"><use href="#i-maximize"/></svg></span>
+            <span class="gallery-caption"><span class="pill">Cardio</span><span class="gallery-title">Cardio Endurance Suite</span></span>
+          </button>
+
+          <button class="gallery-item reveal" data-reveal="up" style="--d:.1s" data-category="Functional" data-title="Functional Sprint Turf &amp; Sled Track">
+            <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=1200&q=80" alt="Indoor green turf track for sled pushes">
+            <span class="gallery-overlay"></span>
+            <span class="gallery-expand"><svg class="icon"><use href="#i-maximize"/></svg></span>
+            <span class="gallery-caption"><span class="pill">Functional</span><span class="gallery-title">Functional Sprint Turf &amp; Sled Track</span></span>
+          </button>
+
+          <button class="gallery-item reveal" data-reveal="up" style="--d:.2s" data-category="Functional" data-title="Battle Ropes &amp; HIIT Arena">
+            <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=1200&q=80" alt="Battle rope training section">
+            <span class="gallery-overlay"></span>
+            <span class="gallery-expand"><svg class="icon"><use href="#i-maximize"/></svg></span>
+            <span class="gallery-caption"><span class="pill">Functional</span><span class="gallery-title">Battle Ropes &amp; HIIT Arena</span></span>
+          </button>
+
+          <button class="gallery-item reveal" data-reveal="up" style="--d:0s" data-category="Strength" data-title="Power Cage &amp; Squat Bays">
+            <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=1200&q=80" alt="Heavy duty power cage bay">
+            <span class="gallery-overlay"></span>
+            <span class="gallery-expand"><svg class="icon"><use href="#i-maximize"/></svg></span>
+            <span class="gallery-caption"><span class="pill">Strength</span><span class="gallery-title">Power Cage &amp; Squat Bays</span></span>
+          </button>
+
+          <button class="gallery-item reveal" data-reveal="up" style="--d:.1s" data-category="Studio" data-title="Group Studio &amp; Recovery Zone">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=80" alt="Spacious hardwood group fitness studio">
+            <span class="gallery-overlay"></span>
+            <span class="gallery-expand"><svg class="icon"><use href="#i-maximize"/></svg></span>
+            <span class="gallery-caption"><span class="pill">Studio</span><span class="gallery-title">Group Studio &amp; Recovery Zone</span></span>
+          </button>
+
+          <button class="gallery-item reveal" data-reveal="up" style="--d:.2s" data-category="Equipment" data-title="Kettlebells &amp; Plyo Vaults">
+            <img src="https://images.unsplash.com/photo-1586401100295-7a8096fd231a?auto=format&fit=crop&w=1200&q=80" alt="Row of cast iron competition kettlebells">
+            <span class="gallery-overlay"></span>
+            <span class="gallery-expand"><svg class="icon"><use href="#i-maximize"/></svg></span>
+            <span class="gallery-caption"><span class="pill">Equipment</span><span class="gallery-title">Kettlebells &amp; Plyo Vaults</span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lb-btn lb-close" id="lbClose" aria-label="Close lightbox"><svg class="icon"><use href="#i-x"/></svg></button>
+        <button class="lb-btn lb-nav lb-prev" id="lbPrev" aria-label="Previous image"><svg class="icon"><use href="#i-chevron-left"/></svg></button>
+        <button class="lb-btn lb-nav lb-next" id="lbNext" aria-label="Next image"><svg class="icon"><use href="#i-chevron-right"/></svg></button>
+
+        <div class="lb-box" id="lbBox">
+          <div class="lb-image"><img id="lbImg" src="" alt=""></div>
+          <div class="lb-footer">
+            <div>
+              <span class="lb-category" id="lbCategory"></span>
+              <h4 class="lb-title" id="lbTitle"></h4>
+            </div>
+            <div class="lb-counter" id="lbCounter"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ MEMBERSHIP ============ -->
+    <section class="section" id="membership">
+      <div class="membership-glow"></div>
+
+      <div class="container relative">
+        <div class="section-head head-membership">
+          <div class="badge"><svg class="icon"><use href="#i-zap"/></svg><span>Investment in Longevity</span></div>
+          <h2 class="section-title">Membership <span class="accent">Plans.</span></h2>
+          <p class="section-lead">Transparent pricing with zero hidden maintenance fees. Cancel or freeze anytime.</p>
+
+          <div class="billing-toggle">
+            <span class="billing-label active" id="labelMonthly">Billed Monthly</span>
+            <button class="switch" id="billingSwitch" aria-label="Toggle billing duration" aria-pressed="false"><span class="switch-knob"></span></button>
+            <span class="billing-label" id="labelYearly">Billed Annually <span class="save-pill">Save 25%</span></span>
+          </div>
+        </div>
+
+        <!-- Prices: data-monthly / data-yearly (yearly = per month when billed annually) -->
+        <div class="plans-grid">
+
+          <div class="plan reveal" data-reveal="up" style="--d:0s">
+            <div>
+              <div class="plan-head"><h3>Basic</h3></div>
+              <p class="plan-tagline">Essential access for disciplined solo trainers.</p>
+              <div class="plan-price">
+                <div class="price-row">
+                  <span class="currency">₹</span>
+                  <span class="price" data-monthly="1999" data-yearly="1499">1,999</span>
+                  <span class="per">/ month</span>
+                </div>
+                <span class="billing-note">Billed month-to-month</span>
+              </div>
+              <ul class="plan-features">
+                <li><span class="check">✓</span><span>Full Gym Floor &amp; Equipment Access</span></li>
+                <li><span class="check">✓</span><span>Locker &amp; Shower Facility</span></li>
+                <li><span class="check">✓</span><span>Free Fitness Assessment</span></li>
+                <li><span class="check">✓</span><span>Access During Standard Hours</span></li>
+                <li><span class="check">✓</span><span>Mobile App Workout Tracker</span></li>
+              </ul>
+            </div>
+            <button class="btn btn-block btn-plan" data-scroll="free-trial"><span>Join Now</span><svg class="icon"><use href="#i-arrow-right"/></svg></button>
+          </div>
+
+          <div class="plan plan-popular reveal" data-reveal="up" style="--d:.12s">
+            <div class="popular-badge">Most Popular Choice</div>
+            <div>
+              <div class="plan-head"><h3>Pro</h3><svg class="icon accent"><use href="#i-sparkles"/></svg></div>
+              <p class="plan-tagline">Our flagship plan designed for accelerated results.</p>
+              <div class="plan-price">
+                <div class="price-row">
+                  <span class="currency">₹</span>
+                  <span class="price" data-monthly="3499" data-yearly="2799">3,499</span>
+                  <span class="per">/ month</span>
+                </div>
+                <span class="billing-note">Billed month-to-month</span>
+              </div>
+              <ul class="plan-features">
+                <li><span class="check">✓</span><span>24/7 Unlimited Gym Floor Access</span></li>
+                <li><span class="check">✓</span><span>All Group Fitness &amp; HIIT Classes</span></li>
+                <li><span class="check">✓</span><span>2x Monthly Personal Trainer Sessions</span></li>
+                <li><span class="check">✓</span><span>Monthly InBody Composition Scan</span></li>
+                <li><span class="check">✓</span><span>Personalized Nutrition Guide</span></li>
+                <li><span class="check">✓</span><span>Sauna &amp; Recovery Lounge Access</span></li>
+                <li><span class="check">✓</span><span>Guest Pass (1 per month)</span></li>
+              </ul>
+            </div>
+            <button class="btn btn-block btn-plan" data-scroll="free-trial"><span>Join Now</span><svg class="icon"><use href="#i-arrow-right"/></svg></button>
+          </div>
+
+          <div class="plan reveal" data-reveal="up" style="--d:.24s">
+            <div>
+              <div class="plan-head"><h3>Elite</h3></div>
+              <p class="plan-tagline">VIP experience with dedicated 1-on-1 coaching.</p>
+              <div class="plan-price">
+                <div class="price-row">
+                  <span class="currency">₹</span>
+                  <span class="price" data-monthly="5999" data-yearly="4799">5,999</span>
+                  <span class="per">/ month</span>
+                </div>
+                <span class="billing-note">Billed month-to-month</span>
+              </div>
+              <ul class="plan-features">
+                <li><span class="check">✓</span><span>Everything in Pro Plan Included</span></li>
+                <li><span class="check">✓</span><span>Weekly 1-on-1 Personal Training (4x/mo)</span></li>
+                <li><span class="check">✓</span><span>Dedicated Bi-weekly Macro Adjustments</span></li>
+                <li><span class="check">✓</span><span>Unlimited Guest Passes</span></li>
+                <li><span class="check">✓</span><span>Reserved VIP Locker &amp; Towel Service</span></li>
+                <li><span class="check">✓</span><span>Complimentary Protein Shake Bar (1/day)</span></li>
+                <li><span class="check">✓</span><span>Quarterly Physio &amp; Mobility Screen</span></li>
+              </ul>
+            </div>
+            <button class="btn btn-block btn-plan" data-scroll="free-trial"><span>Join Now</span><svg class="icon"><use href="#i-arrow-right"/></svg></button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ CONTACT + MAP ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div class="badge"><svg class="icon"><use href="#i-map-pin"/></svg><span>Connect &amp; Visit</span></div>
+          <h2 class="section-title">Get In <span class="accent">Touch.</span></h2>
+          <p class="section-lead">Have questions about memberships, personal training programs, or corporate plans? Drop us a line.</p>
+        </div>
+
+        <div class="grid-12 align-start gap-contact">
+
+          <div class="col-5 stack reveal" data-reveal="left">
+            <div class="card info-card">
+              <h3 class="card-title-sm">Headquarters</h3>
+
+              <div class="info-row">
+                <div class="info-icon"><svg class="icon"><use href="#i-map-pin"/></svg></div>
+                <div>
+                  <span class="info-label">Gym Location</span>
+                  <p class="info-value">Plot 42, Executive Boulevard, Sector 18, City Hub</p>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-icon"><svg class="icon"><use href="#i-phone"/></svg></div>
+                <div>
+                  <span class="info-label">Direct Phone Line</span>
+                  <a href="tel:+919876543210" class="info-value info-phone">+91 98765 43210</a>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-icon"><svg class="icon"><use href="#i-mail"/></svg></div>
+                <div>
+                  <span class="info-label">Email Inquiries</span>
+                  <a href="mailto:hello@getfitt24x7.com" class="info-value info-mail">hello@getfitt24x7.com</a>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-icon"><svg class="icon"><use href="#i-clock"/></svg></div>
+                <div>
+                  <span class="info-label">Training Hours</span>
+                  <p class="info-value">Monday – Sunday: 24/7 Access (Staffed: 6:00 AM – 10:00 PM)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="map-card" id="map">
+              <div class="map-inner">
+                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1000&q=80" alt="City map">
+                <div class="map-overlay">
+                  <div class="map-pin"><svg class="icon"><use href="#i-map-pin"/></svg></div>
+                  <h4>GetFitt24x7 Facility</h4>
+                  <p>Plot 42, Executive Boulevard, Sector 18, City Hub</p>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Plot+42+Executive+Boulevard+Sector+18" target="_blank" rel="noopener noreferrer" class="map-link">
+                    <span>Open in Maps</span><svg class="icon"><use href="#i-external"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-7 card form-card contact-card reveal" data-reveal="right">
+            <form id="contactForm" class="form">
+              <div>
+                <h3 class="card-title">Send Us A Message</h3>
+                <p class="card-sub">Direct communication with gym leadership and head coaches.</p>
+              </div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="contactName">Your Name <span class="accent">*</span></label>
+                  <input type="text" id="contactName" required placeholder="e.g. John Doe">
+                </div>
+                <div class="field">
+                  <label for="contactEmail">Email Address <span class="accent">*</span></label>
+                  <input type="email" id="contactEmail" required placeholder="john@example.com">
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="contactMessage">Your Message <span class="accent">*</span></label>
+                <textarea id="contactMessage" rows="5" required placeholder="Tell us about your fitness background, schedule preferences, or inquiries..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-block btn-submit btn-send">
+                <svg class="icon"><use href="#i-send"/></svg><span>Send Message</span>
+              </button>
+            </form>
+
+            <div class="success success-contact" id="contactSuccess" hidden>
+              <div class="success-icon"><svg class="icon"><use href="#i-check-circle"/></svg></div>
+              <h3 class="card-title card-title-lg">Message Sent!</h3>
+              <p class="success-text">
+                Thank you, <strong class="white" id="contactOutName"></strong>. Our front desk concierge has received your note and will reply to
+                <strong class="accent" id="contactOutEmail"></strong> within 4 hours.
+              </p>
+              <button class="btn btn-outline btn-outline-sm" id="contactReset">Send Another Note</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-text">GetFitt24x7</span>
+            <span class="logo-dot"></span>
+          </div>
+          <p>Continuous improvement is better than delayed perfection</p>
+          <div class="footer-socials">
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg class="icon"><use href="#i-youtube"/></svg></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><button data-scroll="home">Home</button></li>
+            <li><button data-scroll="about">About Us</button></li>
+            <li><button data-scroll="trainers">Certified Trainers</button></li>
+            <li><button data-scroll="gallery">Gym Gallery</button></li>
+            <li><button data-scroll="membership">Membership Plans</button></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Programs</h4>
+          <ul class="footer-links">
+            <li>Hypertrophy &amp; Strength</li>
+            <li>Functional HIIT Circuits</li>
+            <li>Olympic Barbell Lifting</li>
+            <li>Metabolic Conditioning</li>
+            <li>Personalized Clinical Nutrition</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Access &amp; Hours</h4>
+          <div class="footer-hours">
+            <p class="white">Open 24/7 for Members</p>
+            <p>Staffed: Mon-Sun 6 AM – 10 PM</p>
+            <p class="footer-phone">+91 98765 43210</p>
+            <p>hello@getfitt24x7.com</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> GetFitt24x7. All rights reserved. “Continuous improvement is better than delayed perfection”</p>
+        <button class="to-top" id="toTop" title="Scroll to top">
+          <span>Top</span><svg class="icon"><use href="#i-arrow-up"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
