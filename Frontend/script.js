@@ -4,7 +4,7 @@
 
 /* ---------- Backend API ---------- */
 // Change this one line when the backend is deployed.
-const API_BASE = 'http://127.0.0.1:8000/api';
+const API_BASE = "https://elitefit24x7.onrender.com";
 
 const FIELD_LABELS = {
   full_name: 'Name', name: 'Name', phone: 'Phone', email: 'Email',
